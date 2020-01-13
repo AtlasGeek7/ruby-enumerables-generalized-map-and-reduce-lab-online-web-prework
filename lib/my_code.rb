@@ -2,7 +2,7 @@ def map(source_array)
   arr = []
   i = 0
   while i < source_array.length
-    arr << (yield(s[i]))
+    arr << yield(s[i])
     i += 1
   end
   return arr
